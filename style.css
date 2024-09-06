@@ -1,0 +1,158 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Estiliza o corpo da página com a imagem de fundo fixa */
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background-image: url('img.jpg'); /* Substitua pelo caminho correto da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Imagem de fundo fixa */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Garante que todo o conteúdo do body fique centralizado */
+}
+
+/* Remove o fundo e a sombra do main */
+main {
+  background-color: transparent; /* Remove o fundo */
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none; /* Remove a sombra */
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; /* Espaçamento abaixo do conteúdo principal */
+  flex: 1; /* Expande o main para ocupar o espaço restante */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo do main */
+  align-items: center; /* Centraliza horizontalmente o conteúdo do main */
+}
+
+/* Estiliza o título h1 */
+h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+  margin-bottom: 20px;
+}
+
+/* Estiliza as seções da página */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Estiliza o campo de pesquisa */
+section input {
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor do input */
+}
+
+/* Estiliza o botão */
+section button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: #30475e;
+  color: #f5f7f8;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra ao redor do botão */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover no botão */
+section button:hover {
+  background-color: #1f2f40;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Remove o fundo e sombra da área de resultados */
+.resultados-pesquisa {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1rem;
+  padding: 0;
+  border-radius: 0; /* Remove qualquer borda arredondada */
+  background-color: transparent; /* Fundo totalmente transparente */
+  box-shadow: none; /* Remove qualquer sombra */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+  background-color: rgba(255, 255, 255, 0.85); /* Fundo sutil para destacar o conteúdo */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: box-shadow 0.3s ease; /* Transição suave para efeito hover */
+}
+
+/* Efeito hover nos itens de resultado */
+.item-resultado:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+  font-size: 1.8rem;
+  color: #222831;
+  margin-bottom: 0.8rem;
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+  text-decoration: none;
+  color: #30475e;
+  font-weight: bold; /* Destaca o link */
+}
+
+/* Efeito hover nos links */
+.item-resultado a:hover {
+  text-decoration: underline;
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+  color: #45474b;
+  font-size: 1.1rem;
+  margin: 0.8rem 0;
+}
+
+/* Estiliza o rodapé da página */
+footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo do rodapé */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+  position: fixed; /* Rodapé fixo */
+  bottom: 0; /* Posiciona no fim da página */
+  left: 0;
+}
+
+footer a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
